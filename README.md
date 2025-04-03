@@ -12,7 +12,10 @@ Switch context less by using a really cheap model at my command line.
 
 - assumes `openai` and `python-dotenv` are installed globally.
 
-## Improvement
+## Improvements
 
-- system prompt for really tight answers that don't use a bunch of tokens.
-- make set up easier
+- [ ] can't arrow backward on input! Fix.
+- [x] system prompt for really tight answers that don't use a bunch of tokens.
+- [ ] make set up easier
+- [ ] add token/cost accounting
+- [ ] make it faster (import can be slow)
