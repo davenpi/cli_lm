@@ -15,6 +15,7 @@ Switch context less by using a really cheap model at my command line.
 ## Improvements
 
 - [ ] can't arrow backward on input! Fix.
+- [ ] add multi turn chat capability.
 - [x] system prompt for really tight answers that don't use a bunch of tokens.
 - [ ] make set up easier
 - [ ] add token/cost accounting
