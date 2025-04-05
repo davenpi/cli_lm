@@ -1,1 +1,5 @@
+# env vars
 *.env
+
+# jupyter notebooks
+nbs/

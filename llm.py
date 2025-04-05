@@ -19,10 +19,10 @@ def main():
 
     # Send to the model
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o-mini",
         store=True,
         messages=[
-            {"role": "system", "content": META_PROMPT},
+            {"role": "developer", "content": META_PROMPT},
             {"role": "user", "content": prompt},
         ],
     )
