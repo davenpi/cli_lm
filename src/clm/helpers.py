@@ -9,22 +9,6 @@ os.makedirs(config_dir, exist_ok=True)
 env_path = os.path.join(config_dir, ".env")
 
 
-META_PROMPT = """
-Please try to keep your answers concise. I am asking these questions in a terminal
-window on my Mac. For example, if I ask for the command to do something, just provide
-the answer and don't worry about recapitulating the question. Suppose I ask 'How do I
-list what is in my current working directory including hidden files?' You can just
-respond with `ls -a` and a short description saying something like 'this command lists
-what is in the current directory, including directory entries whose name begin with a
-dot (`.`)'.
-
-That said, for more complex command line tools feel free to explain what each option
-does in a few sentences. Also, when your answers are getting a little long, make sure to
-add a newline so each sentence only take up about 79 characters or so. Formatting is
-really important for me. Thank you!
-"""
-
-
 def read_env_file(file_path: str) -> dict:
     """
     Read vars from `file_path`
@@ -96,6 +80,23 @@ if not config or "OPENAI_API_KEY" not in config:
     config = create_env_file(env_path)
 
 API_KEY = config.get("OPENAI_API_KEY")
+
+META_PROMPT = """
+Please try to keep your answers concise. I am asking these questions in a terminal
+window on my Mac. For example, if I ask for the command to do something, just provide
+the answer and don't worry about recapitulating the question. Suppose I ask 'How do I
+list what is in my current working directory including hidden files?' You can just
+respond with `ls -a` and a short description saying something like 'this command lists
+what is in the current directory, including directory entries whose name begin with a
+dot (`.`)'.
+
+That said, for more complex command line tools feel free to explain what each option
+does in a few sentences. Also, when your answers are getting a little long, make sure to
+add a newline so each sentence only take up about 79 characters or so. Formatting is
+really important for me.
+
+Finally, please be lively but don't use too many emojis! Thank you :)
+"""
 
 
 def create_parser():
