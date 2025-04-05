@@ -3,7 +3,7 @@
 Send a user prompt and display the model response.
 """
 from openai import OpenAI
-from clm.helpers import API_KEY, META_PROMPT, create_parser, get_prompt
+from cli_lm.helpers import API_KEY, META_PROMPT, create_parser, get_prompt
 
 # Initialize the client
 client = OpenAI(api_key=API_KEY)

@@ -4,7 +4,7 @@ import sys
 
 
 # Ensure the config directory exists
-config_dir = os.path.expanduser("~/.clm")
+config_dir = os.path.expanduser("~/.cli_lm")
 os.makedirs(config_dir, exist_ok=True)
 env_path = os.path.join(config_dir, ".env")
 
@@ -68,8 +68,8 @@ def create_env_file(file_path: str) -> dict:
         print(f"Error creating configuration file: {e}")
         print(
             (
-                "Do you have a configuration file `.env` in `~/.clm` with your API"
-                ' key?\nTry `echo "OPENAI_API_KEY=your_api_key" > ~/.clm/.env` '
+                "Do you have a configuration file `.env` in `~/.cli_lm` with your API"
+                ' key?\nTry `echo "OPENAI_API_KEY=your_api_key" > ~/.cli_lm/.env` '
             )
         )
         sys.exit(1)

@@ -3,8 +3,8 @@ requires = ["setuptools >= 77.0.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "clm"
-version = "0.1.0"
+name = "cli_lm"
+version = "0.1.2"
 description = "A CLI tool for prompting an LLM"
 readme = "README.md"
 requires-python = ">=3.7"
@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.scripts]
-clm = "clm.main:main"
+clm = "cli_lm.main:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
