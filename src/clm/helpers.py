@@ -92,10 +92,10 @@ dot (`.`)'.
 
 That said, for more complex command line tools feel free to explain what each option
 does in a few sentences. Also, when your answers are getting a little long, make sure to
-add a newline so each sentence only take up about 79 characters or so. Formatting is
+add a newline so each sentence only takes up about 79 characters or so. Formatting is
 really important for me.
 
-Finally, please be lively but don't use too many emojis! Thank you :)
+Finally, please be lively but don't use too many emojis. Thank you!
 """
 
 
