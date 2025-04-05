@@ -51,13 +51,12 @@ def create_parser():
     return parser
 
 
-def get_user_prompt(args):
+def get_prompt(args):
     """Get the prompt from args or request input"""
     if args.prompt:
-        return args.prompt
+        prompt = args.prompt
+        # clear the prompt so we can continue in multiturn
+        args.prompt = None
     else:
-        try:
-            return input("Ask away:\n")
-        except KeyboardInterrupt:
-            print("\nKeyboard interrupt!\n")
-            sys.exit()
+        prompt = input("Ask away:\n")
+    return prompt
