@@ -1,9 +1,17 @@
+# Python-generated files                                                                                                                                                                                                        
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.DS_Store
+
+# venv
+.venv
+
 # env vars
 *.env
 
 # jupyter notebooks
 nbs/
-
-# distribution files
-dist/
-*.egg-info
