@@ -17,7 +17,12 @@ pip install cli-lm
 ## Quick Start
 The first run will prompt for your
 <a href="https://platform.openai.com/docs/overview" target="_blank">Open AI API key</a>.
-Just paste the key in.
+Just paste the key in. Or create the key directly in `~/.cli_lm/.env` with
+
+```shell
+echo "OPENAI_API_KEY=your_new_key" > ~/.cli_lm/.env
+```
+
 **Note** you'll have to pay Open AI to get an API key and start using their models.
 For now this package sets `gpt-4o-mini` as the model of choice. It costs 0.15¢/0.60¢
 per 1 million input/output tokens. 1 token ~ 1 word.
@@ -28,7 +33,7 @@ clm "How do I amend a commit in git?"
 
 # Interactive mode (input in python interpreter)
 clm
-> How can I list the processes listening on a given port?
+> How do I list the processes listening on a given port?
 ```
 
 Chat is assumed to be multiturn (i.e., you'll always be asked for your next prompt).
