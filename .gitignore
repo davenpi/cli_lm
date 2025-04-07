@@ -6,3 +6,4 @@ nbs/
 
 # distribution files
 dist/
+*.egg-info

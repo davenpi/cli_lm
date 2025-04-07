@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cli_lm"
-version = "0.1.2"
+version = "0.1.3"
 description = "A CLI tool for prompting an LLM"
 readme = "README.md"
 requires-python = ">=3.7"
 license = {text = "MIT"}
 authors = [
-    {name = "", email = "your.email@example.com"}
+    {name = "Ian Davenport", email = "davenport.ianc@gmail.com"}
 ]
 dependencies = [
     "openai",
@@ -21,3 +21,8 @@ clm = "cli_lm.main:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
+
+[project.urls]
+"Homepage" = "https://github.com/davenpi/cli_lm"
+"Bug Tracker" = "https://github.com/davenpi/cli_lm/issues"
+"Documentation" = "https://github.com/davenpi/cli_lm#readme"
