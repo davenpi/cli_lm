@@ -3,3 +3,6 @@
 
 # jupyter notebooks
 nbs/
+
+# distribution files
+dist/
