@@ -35,7 +35,7 @@ def main():
             print(completion.choices[0].message.content)
             print("\n-----------")
 
-        except KeyboardInterrupt:
+        except (KeyboardInterrupt, EOFError):
             print("\nUntil next time!\n")
             return
 
