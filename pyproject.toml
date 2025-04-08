@@ -1,6 +1,6 @@
 [project]
-name = "cli_lm"
-version = "0.1.4"
+name = "cli-lm"
+version = "0.1.5"
 description = "A CLI tool for prompting an LLM"
 readme = "README.md"
 requires-python = ">=3.12"
