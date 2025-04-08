@@ -1,6 +1,6 @@
 [project]
 name = "cli-lm"
-version = "0.1.5"
+version = "0.1.6"
 description = "A CLI tool for prompting an LLM"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -12,6 +12,10 @@ dependencies = [
     "openai>=1.71.0",
 ]
 
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
 [project.scripts]
 clm = "cli_lm.main:main"
 
@@ -21,7 +25,5 @@ clm = "cli_lm.main:main"
 "Documentation" = "https://github.com/davenpi/cli_lm#readme"
 
 [tool.setuptools]
+packages = ["cli_lm"]
 package-dir = {"" = "src"}
-
-[dependency-groups]
-dev = []

@@ -56,6 +56,7 @@ def create_env_file(file_path: str) -> dict:
         dict with OpenAI API key.
     """
     print("No configuration file found. Let's set up your OpenAI API key.")
+    print("Get a key here: https://platform.openai.com/docs/overview")
     api_key = input("Please enter your OpenAI API key: ").strip(" \"'")
 
     try:
