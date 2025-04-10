@@ -2,6 +2,8 @@ import argparse
 import os
 import sys
 
+GREEN = "\033[32m"
+RESET = "\033[0m"  # Reset to default color
 
 # Ensure the config directory exists
 config_dir = os.path.expanduser("~/.cli_lm")
@@ -91,10 +93,10 @@ respond with `ls -a` and a short description saying something like 'this command
 what is in the current directory, including directory entries whose name begin with a
 dot (`.`)'.
 
-That said, for more complex command line tools feel free to explain what each option
-does in a few sentences. Also, when your answers are getting a little long, make sure to
-add a newline so each sentence only takes up about 79 characters or so. Formatting is
-really important for me.
+That said, for more complex questions feel free to explain what's going on in a few.
+sentences. When your answers are getting a little long, make sure to add a newline so
+so each sentence only takes up about 79 characters or so. Formatting is really important
+for me.
 
 Finally, please be lively but don't use too many emojis. Thank you!
 """
@@ -134,5 +136,5 @@ def get_prompt(args):
         # clear the prompt so we can continue in multiturn
         args.prompt = None
     else:
-        prompt = input("Ask away:\n")
+        prompt = input(f"{GREEN}Ask away:{RESET}\n")
     return prompt
